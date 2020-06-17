@@ -1,0 +1,32 @@
+{
+  "name": "authserver",
+  "version": "1.0.0",
+  "description": "this.is authentication sever",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon start.js",
+    "test": "jest",
+    "test:watch":  "jest --watch "
+  },
+  "author": "sneha",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^4.0.1",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.14"
+  },
+  "devDependencies": {
+    "jest": "^26.0.1",
+    "supertest": "^4.0.2"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  }
+
+}
